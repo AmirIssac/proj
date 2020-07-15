@@ -1,0 +1,19 @@
+/* ehg_ */
+
+
+ body{
+   
+}
+
+.logo{
+	float: left;
+}
+ .header{
+       position: absolute;
+       left: 470px;
+       top:30px;
+       font-size: 40px;
+       font-family: arial;
+       color: #e88412;
+       text-shadow: 2px 3px #363636;
+ }

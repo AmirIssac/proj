@@ -1,0 +1,102 @@
+/* control panel  and roles page */
+
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin: auto;
+	background:#a7adba ;
+}
+
+.logo{
+flex: 1;
+}
+
+.head{
+flex: 2;
+}
+
+h1{
+    text-shadow: 1px 2px #d2d4dc;
+    animation-name: rot;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+nav{
+	width: 90%;
+	margin: auto;
+}
+ul{
+	display: flex;
+	list-style: none;
+}
+
+li{
+	flex: 1;
+	color: #4f5b66;
+}
+
+li:hover{
+	transform:scale(1.2,1.2);
+}
+
+a{
+	text-decoration:none;
+    color: #4f5b66;
+}
+
+a:hover{
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+i{
+	margin-left: 5px;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+    width: 90%;
+    margin: auto;
+	margin-top: 50px;
+}
+
+.usrrow{
+	display: flex;
+}
+
+.pararow{
+	width: 90%;
+	margin: auto;
+	background:linear-gradient(to right , #d2d4dc , #e5e6eb );
+
+}
+
+.makeadmin{
+float: right;
+}
+
+
+button{
+	width: 150px;
+	height:30px;
+	border:2px solid #a7adba;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	background: #2A363B;
+	color: white;
+}
+
+img{
+	border-radius: 50%;
+}

@@ -1,0 +1,139 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin: auto;
+	background:#a7adba ;
+}
+
+.logo{
+flex: 1;
+}
+
+.head{
+flex: 2;
+}
+
+h1{
+    text-shadow: 1px 2px #d2d4dc;
+    animation-name: rot;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+nav{
+	width: 90%;
+	margin: auto;
+}
+ul{
+	display: flex;
+	list-style: none;
+}
+
+li{
+	flex: 1;
+	color: #4f5b66;
+}
+
+li:hover{
+	transform:scale(1.2,1.2);
+}
+
+a{
+	text-decoration:none;
+    color: #4f5b66;
+}
+
+a:hover{
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+i{
+	margin-left: 5px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 40% 25% 20% 15%;
+    grid-template-rows: 25% 25% 20% 20% 10%;
+
+}
+
+
+
+form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+input{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #a7adba;
+}
+
+.remember{
+    display: flex;
+}
+
+button{
+    width: 150px;
+    height:50px;
+    border:2px solid #a7adba;
+    background:transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count:1;
+}
+
+button:hover{
+    background:#a7adba ;
+    border-color: #000;
+}
+
+
+@keyframes rot{
+    0%{
+        transform: rotate(-4deg);
+    }
+    25%{
+        transform: rotate(-2deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(2deg);
+    }
+    100%{
+        transform: rotate(4deg);
+    }
+}
+
+@keyframes move{
+    from{
+transform: translateX(600px);
+    }
+    to{
+transform: translateX(0px);
+    }
+}
+ 

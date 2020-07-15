@@ -1,0 +1,262 @@
+/* ehg_ */
+
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+
+header{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin: auto;
+	background:#a7adba ;
+	filter: drop-shadow(0px 2px 3px black);
+}
+
+button{
+	width: 150px;
+	height:50px;
+	border:2px solid #a7adba;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+.logo{
+flex: 1;
+}
+
+.head{
+flex: 2;
+}
+
+h1{
+	text-shadow: 1px 2px #d2d4dc;
+
+}
+
+nav{
+	width: 90%;
+	margin: auto;
+}
+ul{
+	display: flex;
+	list-style: none;
+}
+
+li{
+	flex: 1;
+	color: #4f5b66;
+}
+
+li:hover{
+	transform:scale(1.2,1.2);
+}
+
+a{
+	text-decoration:none;
+    color: #4f5b66;
+}
+
+a:hover{
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+i{
+	margin-left: 5px;
+}
+
+.prim1{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	/*background:lightblue;*/
+
+}
+
+.paragraph{
+	padding: 0px 0px 0px 0px;
+	height: 10vh;
+	direction: rtl;
+	flex: 2;
+    background:linear-gradient(to right , #d2d4dc , #e5e6eb );
+}
+
+img{
+	background:transparent;
+	flex: 1;
+}
+
+.card{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	border:2px solid  #a7adba;
+	height:298px;
+	border-radius: 10px;
+	/*background: rgba(168, 230, 206, 0.3);*/
+	/*box-shadow: 5px 5px #706a6a;*/
+	background:  #e6e6ea;
+	filter: drop-shadow(0px 8px 8px black);
+	animation-name: movcard;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+	
+}
+
+.row1pro{
+	/*border: 2px solid #4f5b66;*/
+	display: flex;
+	justify-content: space-between;
+}
+.row2pro{
+	/*border: 2px solid #4f5b66;*/
+	display: flex;
+}
+
+.row3pro{
+	/*border: 2px solid #4f5b66;*/
+	display: flex;
+}
+
+.row4pro{
+	display: flex;
+}
+
+.crown{
+	filter: drop-shadow(0px 4px 4px black);
+}
+
+
+h4{
+	flex: 1;
+	color: #2A363B
+}
+
+h5{
+	color: #2A363B
+}
+.imgpro{
+	border-radius: 50%;
+	flex: 2;
+	margin: 5px 0 0 5px;
+	border: 1px solid #2A363B;
+	filter: drop-shadow(0px 2px 3px black);
+}
+
+.imgpro:hover{
+	transform: scale(2);
+}
+
+
+
+.prim2{
+	width: 90%;
+	margin: auto;
+	/*background:blue;*/
+	display: flex;
+}
+ .btn1{
+ 	margin-left: 40vh;
+ 	width: 150px;
+ 	height:50px;
+ 	border:2px solid #a7adba;
+ 	background:transparent;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: bold;
+ 	transition: border-radius 0.5s;
+ }
+
+ .btn2{
+   margin-left: 20vh;
+    width: 150px;
+ 	height:50px;
+ 	border:2px solid #000;
+ 	background:#a7adba;
+ 	 	font-family: 'Poppins', sans-serif;
+ 	font-weight: bold;
+ 	transition: border-radius 0.5s;
+ }
+
+ .btn1:hover{
+ 	 border-radius:50%;
+ }
+
+ .btn2:hover{
+ 	 border-radius:50%;
+ }
+
+ .circ1{
+ 	position: absolute;
+ 	right: 0px;
+ 	top: 0px;
+ 	z-index: -1;
+ 	opacity: 0.3;
+ }
+
+ .circ2{
+ 	position: absolute;
+ 	right: 50vh;
+ 	top: 40vh;
+ 	z-index: -1;
+ 	opacity: 0.2;
+ }
+
+ .circ3{
+ 	position: absolute;
+ 	right: 85vh;
+ 	top: 65vh;
+ 	z-index: -1;
+ 	opacity: 0.1;
+ }
+
+ .car{
+	animation-name: mov;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+ }
+
+ .edit{
+	width: 50px;
+	height:50px;
+	border-radius: 50%;
+	border:1px solid #2A363B;
+	margin-left:  10px;
+	background: #2A363B;
+	color: white;
+	
+}
+
+.edit:hover{
+	border-color: white ;
+	border-width: 2px;
+}
+
+ @keyframes mov{
+	 from{
+transform: translateY(-100px);
+opacity: 0.4;
+	 }
+	 to{
+		transform: translateY(0px);
+		opacity: 1;
+	 }
+ }
+
+ @keyframes movcard{
+from{
+	transform: translateY(-100px);
+	transform: scale(0.5);
+opacity: 0.4;
+}
+to{
+	transform: translateY(0px);
+	transform: scale(1);
+	opacity: 1;
+ }
+ }

@@ -1,0 +1,111 @@
+body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin: auto;
+	background:#a7adba ;
+}
+
+.logo{
+flex: 1;
+}
+
+.head{
+flex: 2;
+}
+
+h1{
+    text-shadow: 1px 2px #d2d4dc;
+    animation-name: rot;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+nav{
+	width: 90%;
+	margin: auto;
+}
+ul{
+	display: flex;
+	list-style: none;
+}
+
+li{
+	flex: 1;
+	color: #4f5b66;
+}
+
+li:hover{
+	transform:scale(1.2,1.2);
+}
+
+a{
+	text-decoration:none;
+    color: #4f5b66;
+}
+
+a:hover{
+	font-weight: bold;
+	text-decoration: underline;
+
+}
+
+i{
+	margin-left: 5px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 40% 25% 20% 15%;
+    grid-template-rows: 25% 25% 20% 20% 10%;
+
+}
+
+
+
+form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.proform{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+
+input{
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #a7adba;
+}
+
+button{
+	width: 150px;
+	height:50px;
+	border:2px solid #a7adba;
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+}
+
+button:hover{
+    background:#a7adba ;
+    border-color: #000;
+}
